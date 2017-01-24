@@ -14,3 +14,11 @@ notifications:
   on_success: always # default: always
   on_failure: always # default: always
   on_start: always   # default: never
+env:
+  - CXX=g++-4.8
+addons:
+  apt:
+    sources:
+      - ubuntu-toolchain-r-test
+    packages:
+      - g++-4.8
